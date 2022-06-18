@@ -82,7 +82,7 @@ export const Home = () => {
     labels: label,
     datasets: [
       {
-        label: "cases",
+        label: "Cases/Time",
         backgroundColor: "#0AA1DD",
         borderColor: "rgba(0,0,0,1)",
         borderWidth: 1,
@@ -104,7 +104,7 @@ export const Home = () => {
               setCountryName("");
             }}
           >
-            <RiHome2Line />
+            <RiHome2Line style={{ fontSize: "25px" }} />
           </Link>
         </div>
         <div className="login_section">
@@ -256,7 +256,7 @@ export const Home = () => {
       ) : (
         <div>
           {cases.length != 0 && label.length != 0 ? (
-            <div>
+            <div className="search_content">
               <Bar
                 data={state}
                 options={{

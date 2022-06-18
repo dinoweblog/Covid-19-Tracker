@@ -29,7 +29,7 @@ const Login = ({ setIsOpen, setIsOpen2 }) => {
     event.preventDefault();
     dispatch(loginLoading());
 
-    fetch(`https://emart-server.herokuapp.com/login`, {
+    fetch(`https://user-register-login-data.herokuapp.com/login`, {
       method: "POST",
       body: JSON.stringify(userDetails),
       headers: {

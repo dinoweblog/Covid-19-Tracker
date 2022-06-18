@@ -24,7 +24,7 @@ const Register = ({ setIsOpen, setIsOpen2 }) => {
   const getRegister = (event) => {
     event.preventDefault();
 
-    fetch(`https://emart-server.herokuapp.com/register`, {
+    fetch(`https://user-register-login-data.herokuapp.com/register`, {
       method: "POST",
       body: JSON.stringify(userDetails),
       headers: {

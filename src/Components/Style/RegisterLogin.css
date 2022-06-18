@@ -16,7 +16,7 @@ input {
   color: var(--font_color);
 }
 .login_container {
-  height: 100vh;
+  height: 60vh;
 }
 .register_container form {
   display: flex;
@@ -87,32 +87,3 @@ input[type="checkbox"] {
   color: var(--title-color)
 }
 
-@media (max-width: 998px) {
-  .register_container form {
-    width: 50%;
-    padding: 8%;
-    margin-top: 4%;
-  }
-}
-
-@media (max-width: 835px) and (min-width: 798px) {
-  .register_container form {
-    width: 70%;
-    padding: 8%;
-    margin-top: 6%;
-  }
-}
-@media (max-width: 798px) {
-  .register_container form {
-    width: 60%;
-    padding: 8%;
-    margin-top: 7%;
-  }
-}
-@media (max-width: 520px) {
-    .register_container form {
-            width: 80%;
-            padding: 8%;
-            margin-top: 10%;
-        }
-}

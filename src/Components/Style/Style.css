@@ -39,6 +39,7 @@ h1, h2, h3, h4, p, div{
 /* ---------------search section-------------- */
 .search_section{
   display: flex;
+ 
 }
 
 .not_found{
@@ -49,6 +50,9 @@ h1, h2, h3, h4, p, div{
 .active{
   pointer-events: none;
   opacity: .9;
+}
+.search_content{
+  margin-top: 50px;
 }
 /* -------------------global section----------------- */
 .global_section{
