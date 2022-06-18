@@ -22,7 +22,7 @@ export const searchData = (countryName) => (dispatch) => {
   )
     .then((res) => res.json())
     .then((res) => {
-      searchSuccess(res);
+      dispatch(searchSuccess(res));
     })
     .catch((error) => console.log(error));
 };

@@ -78,8 +78,6 @@ export const Home = () => {
       .catch((error) => console.log(error));
   };
 
-  console.log(filterCountry);
-
   const state = {
     labels: label,
     datasets: [

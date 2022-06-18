@@ -17,8 +17,8 @@ export const searchReducer = (store = initialState, { type, payload }) => {
         ...store,
         loading: false,
         error: false,
-        cases: [...payload.Cases],
-        label: [...payload.Date],
+        cases: [...payload.map((e) => e.Cases)],
+        label: [...payload.map((e) => e.Date.slice(0, 10))],
       };
 
     case SEARCH_ERROR:
